@@ -20,21 +20,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mo0-6b-36o">
-                                <rect key="frame" x="0.0" y="101" width="375" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="VGH-sS-dFi"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rHi-Cc-wr6"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Mo0-6b-36o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FhP-GW-dti"/>
-                            <constraint firstItem="Mo0-6b-36o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="T8K-94-Dqc"/>
-                            <constraint firstAttribute="trailing" secondItem="Mo0-6b-36o" secondAttribute="trailing" id="cgv-4H-EXE"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
