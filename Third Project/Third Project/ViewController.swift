@@ -11,23 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var progBar: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let label:UILabel = UILabel(frame: CGRect(x: 20, y: 40, width: 300, height: 30))
-        label.text = "from code"
-        view.addSubview(label)
-        
-        let button:UIButton = UIButton(frame: CGRect(x: 20, y: 100, width: 150, height: 40))
-        button.setTitle("Code button", for: .normal)
-        button.backgroundColor = UIColor.darkGray
-        button.addTarget(self , action: #selector(didClick), for: .touchUpInside)
-        view.addSubview(button)
     }
     
-    func didClick(btn:UIButton) {
-        btn.setTitle("Clicked!", for: .normal)
+    @IBAction func didMoveSlider(_ sender: Any) {
+        progBar.progress = (sender as AnyObject).value
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
